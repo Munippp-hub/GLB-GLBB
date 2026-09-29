@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Race - GLB & GLBB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game">
+
+        <h1>🏎️ Physics Race</h1>
+        <p class="subtitle">GLB vs GLBB</p>
+
+        <div class="stats">
+            <div>
+                <span>SKOR</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div>
+                <span>NYAWA</span>
+                <strong id="lives">❤️❤️❤️</strong>
+            </div>
+
+            <div>
+                <span>LEVEL</span>
+                <strong id="level">1</strong>
+            </div>
+        </div>
+
+        <!-- TRACK -->
+        <div class="track">
+            <div class="road"></div>
+
+            <div id="car" class="car">
+                🏎️
+            </div>
+
+            <div class="finish">
+                🏁
+            </div>
+        </div>
+
+        <div class="info">
+            <div>
+                <span id="mode">MODE: GLB</span>
+                <small id="progress">Soal 1 / 8</small>
+            </div>
+
+            <button id="restart">Restart</button>
+        </div>
+
+        <!-- QUESTION -->
+        <div class="question-box">
+            <span>PERTANYAAN</span>
+            <h2 id="question">
+                Loading...
+            </h2>
+        </div>
+
+        <!-- ANSWERS -->
+        <div id="options" class="options"></div>
+
+        <div id="feedback"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
